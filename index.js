@@ -60,14 +60,15 @@ database.on("error",(error)=>{
     console.log(error);
 });
 database.once("connected",()=>{
+    app.listen(port,()=>{
+        console.log(`Server running on Port ${port}`);
+    })
     console.log("Database Connected");
 })
 
 
 
-app.listen(port,()=>{
-    console.log(`Server running on Port ${port}`);
-})
+
 
 
 module.exports = app;
