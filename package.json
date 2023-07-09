@@ -8,6 +8,7 @@
     "frontend": "cd Medical-center-app-frontend && npm start",
     "backend": "npm install && nodemon index.js && concurrently",
     "start": "npm i concurrently && concurrently \"npm run backend\" \"npm run frontend\"",
+    "run start":"npm i concurrently && concurrently \"npm run backend\" \"npm run frontend\"",
     "dev": "concurrently \"npm run backend\" \"npm run frontend\""
   },
   "author": "SR",
