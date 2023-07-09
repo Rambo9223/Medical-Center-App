@@ -65,8 +65,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](./Screenshots/Admin-Home.png)
-
  The software is for managing the patient records and patient appointments for the Medical Center.  
 
 The current system used at the centre is not efficient in many ways. There is no way for patients to view previous and upcoming appointments. There is no link between appointments and patients records databases making searching/updating records for admin staff more time consuming, this also makes reviewing patient history more time consuming for doctors.  
@@ -111,7 +109,7 @@ Open the terminal or VSCode and navigate to the directory that contains the file
 ![terminal](/Screenshots/Terminal-Path.png)
 
   Type in to the terminal
-    ```sh
+    ```
     npm start
     ```
 then enter, the required packages should install and once compiled you will be able to use the app on your browser at localhost:3000
@@ -141,9 +139,11 @@ You can user the details - username:AFern@gmail.com , password:fern2000
 ![Patient-Login](/Screenshots/Login-Patient.png)
 
 Upon logging you will see the home screen for patients 
+
 ![Patient-Home-Screen](/Screenshots/Patient-Home1.png)
 
 The patient information is shown on the user datails card, which you are able to edit as the patient. 
+
 ![Patient-Edit-Card](/Screenshots/Patient-Edit-Details.png)
 
 On successful edit you should see the below and the card should automatically update the edited details.
@@ -158,6 +158,9 @@ These are split in to two categories, upcoming and previous.
 
 ![Previous](/Screenshots/Patient-Appointments-Previous.png)
 
+
+
+
 Doctors - 
 
 To login as a doctor ensure you navigate to the Staff Login section of the login screen
@@ -171,8 +174,8 @@ Like the patient home page doctors details will come up on their home page, thes
 
 You will now see an additional page (patients) on the nav bar, 
 
-Navigate to the patients page. Doctors can use this page to search patient records for example 
-if they have an appointment with a patient who has been before with a previous issue and want 
+Navigate to the patients page. Doctors can use this page to search patient records. For example 
+if they have an appointment with a patient who has been to the clinic before with a previous issue and want 
 to familiarise themselves with the patients history, they can do this here. 
 
 ![Doc-Patients](/Screenshots/Doctor-Patient-Page.png)
@@ -180,7 +183,9 @@ to familiarise themselves with the patients history, they can do this here.
 They can query the patient database by either - patient name, unregistered or all patients. 
 On search if the patient exists their record will be retireved, of which the doctor will be able to 
 see in full.
+
 ![Doc-Patient-Record](/Screenshots/Doctor-Patient-Record.png)
+
 ![Doc-Patient-Record-2](/Screenshots/Doctor-Patient-Record-2.png)
 
 In addition to this Doctors can create a new patient record. 
@@ -188,25 +193,38 @@ In addition to this Doctors can create a new patient record.
 
 Navigate to the appoinments page and we can see doctors have the ability to query the appoinments 
 section of the database by, date, all, patient name, doctor name etc 
+
 ![Doc-Appointments](/Screenshots/Appointment-Filter.png)
+
 An example of a returned appointment item.
+
 ![Doc-Appointments-Card](/Screenshots/Appointment-Card-Doctor.png)
 
 They can also edit appointments, primarily the appoinment notes of what was discussed/done with the 
 patient during the appointment. 
+
 ![Doc-Appointments-Edit](/Screenshots/Edit-Appointment-Doctor.png)
+
 ![Doc-Appointments-Edit2](/Screenshots/Edit-Appointment-Doctor-2.png)
+
 ![Doc-Appointments-Edit3](/Screenshots/Edit-Appointment-Doctor-3.png)
+
 ![Doc-Appointments-Edit4](/Screenshots/Edit-Appointment-Doctor-4.png)
 
 
 They have the ability to archive the appointment which onclick will add the appointment to the patient
 record and remove the permission to edit the appointment record any further. 
+
 ![Doc-Appointments-Archive](/Screenshots/Archive1.png)
+
 ![Doc-Appointments-Archive](/Screenshots/Archive2.png)
+
 ![Doc-Appointments-Archive](/Screenshots/Archive3.png)
 
 In addition to this they can also create new appointments.
+
+
+
 
 Admins - 
 
@@ -222,20 +240,27 @@ Like doctors admins can search for patient records although the retrieved record
 They can create new patient records like doctors. 
 Admins have the unique permission to edit patient records and delete patient records.
 Any changes made will automatically update on the record. 
+
 ![Admin-Patient-Record](/Screenshots/Edit-Patient-Admin.png)
 
-In the appoinments section admins can query the database in the same way as doctors and like the patient records, 
+In the appoinments section admins can query the database in the same way as doctors and like with patient records, 
 will only be able to see the non-confidential information on the appointment card. 
+
 ![Admin-Appointment-Card](/Screenshots/Appointment-Card-Admin.png)
+
 They can edit and delete appoinments but they cannot archive appointment as this action is reserved for doctors once the appointment has been completed. Once archived appointments can only be deleted.
+
 ![Admin-Archived](/Screenshots/Archived-Appointment-Admin.png)
 
 The section that is exclusive to admins only is the users path. 
 Navigate to the user page, like the patients page admins can query the database for the doctor & admin information of those that work at the clinic. 
+
 ![Admin-User-Page](/Screenshots/User%20Page%20Admin.png)
+
 They can create new users, edit their information and delete users from the datatbase. 
 
 ![Admin-User1](/Screenshots/User-Card-Admin.png)
+
 ![Admin-User2](/Screenshots/User-Card-Updated-Admin.png);
 
 
@@ -245,7 +270,7 @@ They can create new users, edit their information and delete users from the data
 ## Testing
 
 To run the tests on the app simply go to the terminal and type in 
-    ```sh
+    ```
     npm test
     ```
 Provided the project has been installed correctly the backend test suite will run, and then the frontend 
@@ -270,7 +295,8 @@ For this project time constraints were a factor. So I have listed below some of 
 
 - Add other login routes/verification for users i.e google, facebook.
 
-- Increase responsiveness to mobile phones, currently on mobile screens app looks as follows - 
+- Increase responsiveness to mobile phones, currently on mobile screens app looks as follows: 
+
 ![Small-screen](/Screenshots/MobileTablet.png)
 
 
@@ -309,7 +335,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [The mentors and staff at Hyperion Dev](https://www.hyperiondev.com/)
+* [The Mentors & Staff At Hyperion Dev](https://www.hyperiondev.com/)
 * [Edinburgh University](https://www.ed.ac.uk/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
