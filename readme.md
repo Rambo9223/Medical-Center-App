@@ -207,9 +207,9 @@ patient during the appointment.
 
 ![Doc-Appointments-Edit2](/Screenshots/Edit-Appointment-Doctor-2.png)
 
-![Doc-Appointments-Edit3](/Screenshots/Edit-Appointment-Doctor-3.png)
+![Doc-Appointments-Edit3](/Screenshots/Edit-Apointment-Doctor-3.png)
 
-![Doc-Appointments-Edit4](/Screenshots/Edit-Appointment-Doctor-4.png)
+![Doc-Appointments-Edit4](/Screenshots/Edit-Apointment-Doctor-4.png)
 
 
 They have the ability to archive the appointment which onclick will add the appointment to the patient
