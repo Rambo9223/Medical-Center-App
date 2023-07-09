@@ -2,6 +2,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
+const path = require("path");
 // import helmet for security
 const helmet = require("helmet");
 const {checkContent, checkJWTToken} = require("./routes/middleware");
@@ -13,6 +14,14 @@ app.use(cors());
 app.get('/welcome', (req,resp)=>{
     resp.status(200).send({message:"Welcome to the server!"});
 })
+
+
+app.use(express.static(path.join(__dirname, 'Medical-Center-App-frontend/build')));
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'Medical-Center-App-frontend/build', 'index.html'),function(err){
+    res.status(500).send(err);
+  });
+});
 
 // require dotenv file 
 require("dotenv").config();

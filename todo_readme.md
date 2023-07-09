@@ -4,7 +4,7 @@ Sunday - tidy up unfinished / submit
 Monday - Submit if not already
 
 Search early tasks for chai,mocha test framework and react testing - done
-create proper readme, - tomorrow
-upload with design readme to git - tomorrow
+create proper readme, - done
+upload with design readme to git - done
 deploy possibly railway - tomorrow
-has to run with npm start
+has to run with npm start - done

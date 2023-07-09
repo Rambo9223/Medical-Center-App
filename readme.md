@@ -83,6 +83,9 @@ The new software aims to create a simple but dynamic solution to the above probl
 * [![React][React.js]][React-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
+The App has been secured with helmet with the default levels of protection applied.
+All actions use application-json to protect against malicious attacks.
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -273,7 +276,7 @@ To run the tests on the app simply go to the terminal and type in
     ```
     npm test
     ```
-Provided the project has been installed correctly the backend test suite will run, and then the frontend 
+. Provided the project has been installed correctly the backend test suite will run, and then the frontend 
 test will run. It should appear as follows:
 ![Test1](/Screenshots/Test.png)
 ![Test2](/Screenshots/Test1.png)
