@@ -24,7 +24,7 @@ function checkJWTToken(req,res,next){
             }
         });
     }else{// no token in headers so send error
-        res.status(500).send({message:"No token attached to the request"});
+        res.send({message:"No token attached to the request"});
     }
 };
 // check content is application/json

@@ -11,38 +11,23 @@
 
 
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="git hub link ">
-    <img src="/Medical-Center-App-frontend/src/Components/Images/2.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Rambo9223/Medical-Center-App">
+    <img src="/Medical-Center-App-frontend/src/Components/Images/2.png" alt="Logo" width="120" height="120">
   </a>
 
-<h3 align="center">Clinic Management App(Capstone Project)</h3>
+<h3 align="center">Medical Center App(Capstone Project)</h3>
 
   <p align="center">
     project_description
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Rambo9223/Medical-Center-App"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="deployment link">View Demo</a>
     ·
   </p>
 </div>
@@ -67,9 +52,9 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#testing">Testing</a></li>
+    <li><a href="#future-changes">Future Changes</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -80,9 +65,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](./Screenshots/Admin-Home.png)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+ The software is for managing the patient records and patient appointments for the Medical Center.  
+
+The current system used at the centre is not efficient in many ways. There is no way for patients to view previous and upcoming appointments. There is no link between appointments and patients records databases making searching/updating records for admin staff more time consuming, this also makes reviewing patient history more time consuming for doctors.  
+
+The new software aims to create a simple but dynamic solution to the above problems.   
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,9 +80,11 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
+* [![Mongo][Mongo.com]][Mongo-url]
+* [![Express.js][Express.js.com]][Express.js-url]
 * [![React][React.js]][React-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![Express.js][Express.js.com]][Express.js-url]
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -102,60 +94,187 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
+
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Ensure you have the latest copy of VSCode downloaded to your machine. 
+Find it here - <a href="https://code.visualstudio.com/">VSCode</a>
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+Download the zipped file from the GitHub Repo and unzip in to your chosen directory.
+
+Open the terminal or VSCode and navigate to the directory that contains the files using cd
+
+![terminal](/Screenshots/Terminal-Path.png)
+
+  Type in to the terminal
+    ```sh
+    npm start
+    ```
+then enter, the required packages should install and once compiled you will be able to use the app on your browser at localhost:3000
+
+![Successful Compile](/Screenshots/Successful-Compile.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+The software is for three end-users,  
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+1. The patients registered at the Medical Center, 
+
+2. The doctors who work at the Medical Center,  
+
+3. The Administration staff who work in the Medical Center
+
+The usage of the app has some differences based on who is the end user. 
+
+Patients - 
+
+To log in as a patient ensure you are on the patient login path.
+You can user the details - username:AFern@gmail.com , password:fern2000
+
+![Patient-Login](/Screenshots/Login-Patient.png)
+
+Upon logging you will see the home screen for patients 
+![Patient-Home-Screen](/Screenshots/Patient-Home1.png)
+
+The patient information is shown on the user datails card, which you are able to edit as the patient. 
+![Patient-Edit-Card](/Screenshots/Patient-Edit-Details.png)
+
+On successful edit you should see the below and the card should automatically update the edited details.
+
+Navigate to the appointments page to see all appointments for the patient.
+
+![Patient-Appointments](/Screenshots/Patient-Appointments.png)
+
+These are split in to two categories, upcoming and previous.
+
+![Upcoming](/Screenshots/Patient-Appointments-Upcoming.png)
+
+![Previous](/Screenshots/Patient-Appointments-Previous.png)
+
+Doctors - 
+
+To login as a doctor ensure you navigate to the Staff Login section of the login screen
+you can use the details - username:TJ@hotmail.com , password:hiTom,
+
+![Doc-Login](/Screenshots/Doctor-Login.png)
+
+Like the patient home page doctors details will come up on their home page, these can be edited also.
+
+![Doc-Home](/Screenshots/Doctor-Home-Page.png)
+
+You will now see an additional page (patients) on the nav bar, 
+
+Navigate to the patients page. Doctors can use this page to search patient records for example 
+if they have an appointment with a patient who has been before with a previous issue and want 
+to familiarise themselves with the patients history, they can do this here. 
+
+![Doc-Patients](/Screenshots/Doctor-Patient-Page.png)
+
+They can query the patient database by either - patient name, unregistered or all patients. 
+On search if the patient exists their record will be retireved, of which the doctor will be able to 
+see in full.
+![Doc-Patient-Record](/Screenshots/Doctor-Patient-Record.png)
+![Doc-Patient-Record-2](/Screenshots/Doctor-Patient-Record-2.png)
+
+In addition to this Doctors can create a new patient record. 
+
+
+Navigate to the appoinments page and we can see doctors have the ability to query the appoinments 
+section of the database by, date, all, patient name, doctor name etc 
+![Doc-Appointments](/Screenshots/Appointment-Filter.png)
+An example of a returned appointment item.
+![Doc-Appointments-Card](/Screenshots/Appointment-Card-Doctor.png)
+
+They can also edit appointments, primarily the appoinment notes of what was discussed/done with the 
+patient during the appointment. 
+![Doc-Appointments-Edit](/Screenshots/Edit-Appointment-Doctor.png)
+![Doc-Appointments-Edit2](/Screenshots/Edit-Appointment-Doctor-2.png)
+![Doc-Appointments-Edit3](/Screenshots/Edit-Appointment-Doctor-3.png)
+![Doc-Appointments-Edit4](/Screenshots/Edit-Appointment-Doctor-4.png)
+
+
+They have the ability to archive the appointment which onclick will add the appointment to the patient
+record and remove the permission to edit the appointment record any further. 
+![Doc-Appointments-Archive](/Screenshots/Archive1.png)
+![Doc-Appointments-Archive](/Screenshots/Archive2.png)
+![Doc-Appointments-Archive](/Screenshots/Archive3.png)
+
+In addition to this they can also create new appointments.
+
+Admins - 
+
+Admins have the most usability in the app. However there are some differences. 
+To login as an admin use the details - username:admin@clinic.com, password:admin1
+![Admin-Login](/Screenshots/Login-Admin.png)
+
+Like doctors admins can search for patient records although the retrieved records will ommit any confidential information from appointments.
+![Admin-Patient-Card](/Screenshots/Admin-Patient-Card.png)
+
+![Admin-Patient-Card](/Screenshots/Patient-Card-Expanded-Admin.png)
+
+They can create new patient records like doctors. 
+Admins have the unique permission to edit patient records and delete patient records.
+Any changes made will automatically update on the record. 
+![Admin-Patient-Record](/Screenshots/Edit-Patient-Admin.png)
+
+In the appoinments section admins can query the database in the same way as doctors and like the patient records, 
+will only be able to see the non-confidential information on the appointment card. 
+![Admin-Appointment-Card](/Screenshots/Appointment-Card-Admin.png)
+They can edit and delete appoinments but they cannot archive appointment as this action is reserved for doctors once the appointment has been completed. Once archived appointments can only be deleted.
+![Admin-Archived](/Screenshots/Archived-Appointment-Admin.png)
+
+The section that is exclusive to admins only is the users path. 
+Navigate to the user page, like the patients page admins can query the database for the doctor & admin information of those that work at the clinic. 
+![Admin-User-Page](/Screenshots/User%20Page%20Admin.png)
+They can create new users, edit their information and delete users from the datatbase. 
+
+![Admin-User1](/Screenshots/User-Card-Admin.png)
+![Admin-User2](/Screenshots/User-Card-Updated-Admin.png);
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Testing -->
+## Testing
+
+To run the tests on the app simply go to the terminal and type in 
+    ```sh
+    npm test
+    ```
+Provided the project has been installed correctly the backend test suite will run, and then the frontend 
+test will run. It should appear as follows:
+![Test1](/Screenshots/Test.png)
+![Test2](/Screenshots/Test1.png)
+![Test3](/Screenshots/Test2.png)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- ROADMAP -->
-## Roadmap
+<!-- Future Changes -->
+## Future Changes
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+For this project time constraints were a factor. So I have listed below some of the future changes I would like to make to the App to increase it's functionality.
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+- Integrate with a calendar so app is more functional as an appointment management system.
+
+- Allow Admin & Doctors to set appointments based on what is available in the calendar.
+
+- Add other login routes/verification for users i.e google, facebook.
+
+- Increase responsiveness to mobile phones, currently on mobile screens app looks as follows - 
+![Small-screen](/Screenshots/MobileTablet.png)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- CONTRIBUTING -->
@@ -176,21 +295,12 @@ Don't forget to give the project a star! Thanks again!
 
 
 
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Scott Ramsay - sct_r_9223@live.co.uk
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/github_username/repo_name](https://github.com/Rambo9223/Medical-Center-App)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -199,9 +309,8 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [The mentors and staff at Hyperion Dev](https://www.hyperiondev.com/)
+* [Edinburgh University](https://www.ed.ac.uk/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

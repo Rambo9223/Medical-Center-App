@@ -164,7 +164,7 @@ onClick={()=>{
     <li className="list-group-item"><strong>Patient:</strong>{appointment.patient}</li>:null}
     <li className="list-group-item"><strong>Doctor:</strong>{appointment.doctor}</li>
     {(appointment.appointmentNotes)?<li className="list-group-item"><strong>Appointment notes:</strong>{appointment.appointmentNotes}</li>:null}
-    {(appointment.followUpNotes)?<li className="list-group-item"><strong>Follow up notes:</strong>{appointment.followUpNotes}</li>:<li className="list-group-item">None</li>}
+    {(appointment.followUpNotes)?<li className="list-group-item"><strong>Follow up notes:</strong>{appointment.followUpNotes}</li>:null}
     </ul>
     </div>
 )

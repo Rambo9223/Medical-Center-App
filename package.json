@@ -4,10 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --exit && concurrently \"nodemon index.js\" \"cd Medical-center-app-frontend && npm test\"",
     "frontend": "cd Medical-center-app-frontend && npm start",
     "backend": "npm install && nodemon index.js && concurrently",
-    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "start": "npm i concurrently && concurrently \"npm run backend\" \"npm run frontend\"",
     "dev": "concurrently \"npm run backend\" \"npm run frontend\""
   },
   "author": "SR",
@@ -16,7 +16,6 @@
     "body-parser": "^1.20.2",
     "chai": "^4.3.7",
     "chai-http": "^4.4.0",
-    "concurrently": "^8.0.1",
     "cors": "^2.8.5",
     "dotenv": "^16.1.3",
     "express": "^4.18.2",
@@ -29,6 +28,7 @@
   },
   "devDependencies": {
     "chai": "*",
+    "concurrently": "^8.2.0",
     "mocha": "*",
     "nodemon": "^2.0.22"
   }

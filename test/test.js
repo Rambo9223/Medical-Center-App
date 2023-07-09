@@ -20,7 +20,7 @@ message was as expected,
 
 chai.use(chaiHttp);
 
-describe("test Backend API", () => {
+describe("Test Backend API", () => {
   describe("Connected to the server", () => {
     it("test welcome route", (done) => {
       chai

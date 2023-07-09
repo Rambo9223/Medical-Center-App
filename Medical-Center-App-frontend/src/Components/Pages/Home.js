@@ -8,7 +8,6 @@ import UserInfo from "../Backend-Async-Functions/Session/UserInfo";
 // import images and bootstrap components
 import logo2 from "../Images/2.png";
 import logo3 from "../Images/3.png";
-import { ArrowClockwise } from "react-bootstrap-icons";
 import { Button } from "react-bootstrap";
 
 
